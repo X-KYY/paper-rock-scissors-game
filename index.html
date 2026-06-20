@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html leng="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Notification -->
+         <div id="notification" class="notification-container-off">
+            <h1 id="notif-h1"></h1><!-- the winner -->
+         </div>
+
+        <!-- Title game --> 
+        <div class="title"><p>Paper-Rock-Scissors<br>Game</p></div>
+
+        <!-- Game section -->
+         <div class="game-container">
+            <div class="your-container">
+                <p>YOU</p>
+                <img src="img/question-mark.png" width="300px" height="300px" id="your-img"
+                name="">
+                <p id="human-answer-placeholder">?</p>
+            </div>
+            <div class="vs-container">
+                <p class="describe">Score</p>
+                <p id="score" class="describe">0 : 0</p>
+                <h1>VS</h1>
+                <button id="vs-btn" onclick="playGame(this)">Rock</button>
+                <button id="vs-btn" onclick="playGame(this)">Paper</button>
+                <button id="vs-btn" onclick="playGame(this)">Scissors</button>
+            </div>
+            <div class="computer-container">
+                <p>COMPUTER</p>
+                <img src="img/question-mark.png" width="300px" height="300px" id="computer-img">
+                <p id="computer-answer-placeholder">?</p>
+            </div>
+         </div>
         <script src="script.js"></script>
     </body>
 </html>
